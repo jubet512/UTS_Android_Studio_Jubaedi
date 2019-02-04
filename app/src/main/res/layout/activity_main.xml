@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:id="@+id/main_id">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PENDAFTARAN SISWA(I) SMK JAYA PEMBANGUNAN 2"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Sebelum mengisi formulir ini diharapkan walimurid telah melengkapi persyaratan yang ditentukan"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"/>
+
+
+
+            <EditText
+                android:id="@+id/fieldnamadepan"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama depan"
+                android:inputType="text" >
+            </EditText>
+
+
+            <EditText
+                android:id="@+id/fielnamabelakang"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nama Belakang"
+                android:inputType="text" >
+            </EditText>
+
+            <EditText
+                android:id="@+id/fielalamat"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Alamat"
+                android:inputType="text" >
+            </EditText>
+            <EditText
+                android:id="@+id/fieltelepon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Telepon"
+                android:inputType="text" >
+            </EditText>
+
+
+
+
+            <RadioGroup
+                android:id="@+id/groupAsalSekolah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/labeljk"
+                android:orientation="horizontal"
+                android:padding="5dp" >
+
+                <RadioButton
+                    android:id="@+id/radioSmp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SMP"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radioSmpi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="SMPI"
+                    android:textSize="18sp" />
+
+                <RadioButton
+                    android:id="@+id/radioMts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MTS"
+                    android:textSize="18sp" />
+
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <Spinner
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:entries="@array/array_Jk"
+                    android:id="@+id/spKelamin">
+
+                </Spinner>
+            </LinearLayout>
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pilih Sekolah alternatif"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"/>
+
+            <CheckBox
+                android:id="@+id/cbDwi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="SMK Dwidaya"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cbDon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="SMU Don Bosco"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cekboxsa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="SMK Merah Putih"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/cbSutar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="SMU Sutarmadja"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/tomboltampil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cekboxsa"
+                android:layout_marginTop="5dp"
+                android:text="TAMPILKAN"
+                android:textSize="18sp" />
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>
